@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chiffrement de Vigenère</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="container">
-      <h1>Chiffrement de Vigenère</h1>
-      <label for="message">Message à chiffrer:</label>
-      <textarea id="message" placeholder="Entrez votre message"></textarea>
-      <label for="key">Code secret:</label>
-      <input type="text" id="key" placeholder="Entrez le code secret" />
-      <button onclick="encrypt()">Chiffrer</button>
-      <label for="result">Message chiffré:</label>
-      <textarea id="result" readonly></textarea>
+        <h1>Chiffrement de Vigenère</h1>
+        <label for="message">Message à chiffrer/déchiffrer:</label>
+        <textarea id="message" placeholder="Entrez votre message"></textarea>
+        <label for="key">Code secret:</label>
+        <input type="text" id="key" placeholder="Entrez le code secret">
+        <button onclick="encrypt()">Chiffrer</button>
+        <button onclick="decrypt()">Déchiffrer</button>
+        <label for="result">Résultat:</label>
+        <textarea id="result" readonly></textarea>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
